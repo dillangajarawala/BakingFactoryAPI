@@ -1,9 +1,9 @@
 class Customer < ApplicationRecord
   # get modules to help with some functionality
-  include AppHelpers::Validations
-  include AppHelpers::Deletions
-  include AppHelpers::Activeable::InstanceMethods
-  extend AppHelpers::Activeable::ClassMethods
+  # include AppHelpers::Validations
+  # include AppHelpers::Deletions
+  # include AppHelpers::Activeable::InstanceMethods
+  # extend AppHelpers::Activeable::ClassMethods
 
   # Relationships
   has_many :orders
