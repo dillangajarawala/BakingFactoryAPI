@@ -1,8 +1,8 @@
 class Order < ApplicationRecord
   # get module to help with some functionality
-  # include AppHelpers::Validations
-  # include AppHelpers::Deletions
-  # include AppHelpers::Shipping
+  include AppHelpers::Validations
+  include AppHelpers::Deletions
+  include AppHelpers::Shipping
   require 'base64'
 
   # Relationships
