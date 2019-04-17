@@ -23,7 +23,7 @@ class OrdersController < ApplicationController
   end
 
   def show
-    render json: @order
+    render json: @order, serializer: OrderDetailsSerializer 
   end
 
   private
