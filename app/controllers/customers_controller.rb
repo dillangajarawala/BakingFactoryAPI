@@ -1,4 +1,20 @@
 class CustomersController < ApplicationController
+
+  swagger_controller :customers, "Customer Management"
+
+  swagger_api :index do
+    summary "Fetches all Customers"
+    notes "This lists all the customers"
+  end
+
+  swagger_api :show do
+    summary "Shows one Customer"
+    param :path, :id, :integer, :required, "Customer ID"
+    notes "This lists details of one customer"
+    response :not_found
+  end
+
+
   before_action :set_customer, only: [:show]
   
   def index
