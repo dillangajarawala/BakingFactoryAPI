@@ -22,8 +22,8 @@ class Swagger::Docs::Config
       # add custom attributes to api-docs
       :attributes => {
         :info => {
-          "title" => "Phase 5 API",
-          "description" => "Uses swagger ui and docs to document the Phase 5 API"
+          "title" => "Baking Factory API",
+          "description" => "Uses swagger ui and docs to document the Baking Factory API"
         }
       }
     }
